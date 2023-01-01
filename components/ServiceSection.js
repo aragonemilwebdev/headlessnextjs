@@ -18,7 +18,7 @@ const ServiceSection = (props) => {
                     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                       <Image
                   src={serviceData.node.services.image.sourceUrl}
-         alt="hero" 
+         alt="" 
          width={60}
          height={100}
           />

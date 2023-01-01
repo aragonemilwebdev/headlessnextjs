@@ -15,6 +15,7 @@ const Footer = () => {
   <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <Image
+        alt='footer-logo'
          href="/" src={siteLogo}
          width={100}
          height={100}

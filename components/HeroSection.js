@@ -27,7 +27,7 @@ const HeroSection = (props) => {
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
       <Image
          src={image}
-         alt="hero" 
+         alt="" 
          width={1000}
          height={100}
           />

@@ -15,6 +15,7 @@ const ClientLogoSection = (props) => {
           <div key={index} className="p-4 md:w-1/5 sm:w-1/2 w-full">
           <div className=" px-4 py-6">
           <Image
+          alt="client-logo"
          href="/" src={logo.node.clientLogos.logo.sourceUrl}
          width={120}
          height={100}

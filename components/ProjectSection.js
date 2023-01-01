@@ -21,7 +21,7 @@ const ProjectSection = (props) => {
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                         <Image
           src={projectData.node.projects.image.sourceUrl}
-         alt="hero" 
+         alt="" 
          width={1000}
          height={100}
           />

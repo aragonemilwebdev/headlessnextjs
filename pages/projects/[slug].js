@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import parse from 'html-react-parser';
+import Image from "next/image";
 import { useQuery } from "@apollo/client";
 import { GET_PROJECT_DATA_BY_SLUG } from "../../graphql/projectsDataQuery";
 import { useRouter } from "next/router";
@@ -26,7 +27,12 @@ const ProjectSinglepage = () => {
       <div className="  text-[#6B708D] mt-20">
       <h1>{title}</h1>
       <p className="leading-relaxed mb-3"> {subTitle}</p>
-      <img className=" w-[100%] h-[444px] pt-10"  src={image} />
+      <Image
+         src={image}
+         alt="" 
+         width={1000}
+         height={444}
+          />
       <div className=" my-10">
       {parse(content)}
       </div>
