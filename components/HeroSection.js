@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link'
+import Image from "next/image";
 
 
 const HeroSection = (props) => {
@@ -24,7 +25,12 @@ const HeroSection = (props) => {
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img className="object-cover object-center rounded" alt="hero" src={image} />
+      <Image
+         src={image}
+         alt="hero" 
+         width={1000}
+         height={100}
+          />
     </div>
   </div>
 </section>

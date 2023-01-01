@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const ProjectSection = (props) => {
@@ -18,11 +19,12 @@ const ProjectSection = (props) => {
             {projectsData?.map((projectData, index) => (
               <div key={index} className="p-4 md:w-1/3">
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src={projectData.node.projects.image.sourceUrl}
-                    alt="blog"
-                  />
+                        <Image
+          src={projectData.node.projects.image.sourceUrl}
+         alt="hero" 
+         width={1000}
+         height={100}
+          />
                   <div className="p-6">
                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                       {projectData.node.title}

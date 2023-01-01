@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ClientLogoSection = (props) => {
 
@@ -13,7 +14,11 @@ const ClientLogoSection = (props) => {
 {logos?.map((logo, index)=>(
           <div key={index} className="p-4 md:w-1/5 sm:w-1/2 w-full">
           <div className=" px-4 py-6">
-          <img  src={logo.node.clientLogos.logo.sourceUrl} />
+          <Image
+         href="/" src={logo.node.clientLogos.logo.sourceUrl}
+         width={120}
+         height={100}
+          />
           </div>
         </div>
 ))}

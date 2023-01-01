@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image'
 import { useQuery } from '@apollo/client';
 import { GET_SITE_LOGO_QUERY } from '../../graphql/siteLogoQuery';
 
@@ -13,7 +14,11 @@ const Footer = () => {
         <footer className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <img href="/" src={siteLogo} />
+        <Image
+         href="/" src={siteLogo}
+         width={100}
+         height={100}
+          />
       <p className=" mt-7 text-sm text-[#6B708D]">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
     </div>
     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center justify-end">
