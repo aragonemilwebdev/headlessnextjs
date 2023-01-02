@@ -15,7 +15,7 @@ const ServiceSection = (props) => {
               <div className="flex flex-wrap -m-4">
                 {servicesData?.map((serviceData, index) => (
                   <div key={index} className="p-4 md:w-1/3">
-                    <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <div className="h-full overflow-hidden">
                       <Image
                   src={serviceData.node.services.image.sourceUrl}
          alt="" 
