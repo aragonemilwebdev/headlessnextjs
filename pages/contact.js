@@ -48,25 +48,25 @@ const Contact = () => {
         <div className="p-2 w-full">
           <div className="relative">
             <label htmlFor="name" className="leading-7 text-sm text-gray-600">Full Name</label>
-            <input type="text" id="name" value={name} placeholder="Enter your full name" onChange={(event) => setName(event.target.value)}  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            <input type="text" id="name" value={name} placeholder="Enter your full name" onChange={(event) => setName(event.target.value)}  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
           </div>
         </div>
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-            <input type="text" id="email" placeholder='Enter your email address' value={email} onChange={(event) => setEmail(event.target.value)} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            <input type="text" id="email" placeholder='Enter your email address' value={email} onChange={(event) => setEmail(event.target.value)} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
           </div>
         </div>
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="email" className="leading-7 text-sm text-gray-600">Phone</label>
-            <input type="text" id="email" placeholder='Enter your phone number' value={phone} onChange={(event) => setPhone(event.target.value)} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            <input type="text" id="email" placeholder='Enter your phone number' value={phone} onChange={(event) => setPhone(event.target.value)} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
           </div>
         </div>
         <div className="p-2 w-full">
           <div className="relative">
             <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-            <textarea id="message" placeholder='Write your message here ....' value={message} onChange={(event) => setMessage(event.target.value)} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            <textarea id="message" placeholder='Write your message here ....' value={message} onChange={(event) => setMessage(event.target.value)} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
           </div>
         </div>
         <div className="p-2 w-full">
